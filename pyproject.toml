@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "todo_app"
+version = "0.1.0"
+description = "A Todo app with sign-up/sign-in functionality"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.68.0"
+uvicorn = "^0.15.0"
+sqlalchemy = "^1.4.23"
+psycopg2-binary = "^2.9.1"
+pydantic = "^1.8.2"
+passlib = { extras = ["bcrypt"], version = "^1.7.4" }
+python-jose = "^3.3.0"
+streamlit = "^0.89.0"
+python-multipart = "^0.0.5"
+protobuf = "==3.20.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
